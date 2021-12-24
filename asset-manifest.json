@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ward-safety/static/css/main.f4583ac1.css",
+    "main.js": "/ward-safety/static/js/main.c37185a7.js",
+    "static/js/787.234cb733.chunk.js": "/ward-safety/static/js/787.234cb733.chunk.js",
+    "static/media/ward.jpg": "/ward-safety/static/media/ward.18088ed3ac9cca4d2db0.jpg",
+    "static/media/kongtext.ttf": "/ward-safety/static/media/kongtext.a27eec77292c75f788cc.ttf",
+    "index.html": "/ward-safety/index.html",
+    "main.f4583ac1.css.map": "/ward-safety/static/css/main.f4583ac1.css.map",
+    "main.c37185a7.js.map": "/ward-safety/static/js/main.c37185a7.js.map",
+    "787.234cb733.chunk.js.map": "/ward-safety/static/js/787.234cb733.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4583ac1.css",
+    "static/js/main.c37185a7.js"
+  ]
+}
