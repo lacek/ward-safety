@@ -1,38 +1,128 @@
+@font-face {
+  font-family: 'Kongtext';
+  src: local('Kongtext'), url(./kongtext.ttf) format('truetype');
+}
+
+body {
+  font-family: Kongtext, Arial, serif;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .App {
-  text-align: center;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App.ready .overlay {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App.ready .img-mapper-img {
+  filter: blur(2rem);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App.complete .overlay {
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('./ward.jpg') center no-repeat;
+  background-size: auto, cover;
+  filter: blur(1rem);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#img-mapper {
+  margin:0 auto;
+}
+
+.img-mapper-img {
+  z-index: -1;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 20;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.overlay-content .nes-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.nes-btn.start {
+  margin-top: 2rem;
+}
+
+.timer {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 2;
+  font-size: 2rem;
+  text-shadow:
+    -1px -1px 0 #555,
+     0   -1px 0 #555,
+     1px -1px 0 #555,
+     1px  0   0 #555,
+     1px  1px 0 #555,
+     0    1px 0 #555,
+    -1px  1px 0 #555,
+    -1px  0   0 #555;
+}
+
+.score {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 2;
+  font-size: 2rem;
+  text-shadow:
+    -1px -1px 0 #555,
+     0   -1px 0 #555,
+     1px -1px 0 #555,
+     1px  0   0 #555,
+     1px  1px 0 #555,
+     0    1px 0 #555,
+    -1px  1px 0 #555,
+    -1px  0   0 #555;
+}
+
+.score .nes-icon {
+  height: 14px;
+  margin-right: 0;
 }

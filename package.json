@@ -1,5 +1,6 @@
 {
   "name": "ward-safety",
+  "homepage": "https://lacek.github.io/ward-safety",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,8 +11,12 @@
     "@types/node": "^16.11.14",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3",
+    "nes.css": "^2.3.0",
     "react": "^17.0.2",
+    "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
+    "react-img-mapper": "^1.3.0",
     "react-scripts": "5.0.0",
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2"
@@ -19,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
