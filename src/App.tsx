@@ -17,6 +17,14 @@ function App() {
     setIsStarted(true);
   }
 
+  function restart() {
+    setScore(0);
+    setCompleteMessage('')
+    setIsCompleted(false);
+    setDate(Date.now() + 30000);
+    countdownApi?.start();
+  }
+
   function complete() {
     setIsCompleted(true);
     if (score === 1000) {
@@ -67,6 +75,7 @@ function App() {
               {isCompleted && <div>
                   <p>You've got <span className="nes-text is-success">{score}</span> points.</p>
                   <p>{completeMessage}</p>
+                  <button type="button" className="nes-btn is-warning start" onClick={restart}>TRY AGAIN</button>
                 </div>}
               {!isCompleted && <div>
                 <p>There are 10 problems in the picture.</p>
