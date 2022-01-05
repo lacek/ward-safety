@@ -46,10 +46,12 @@ body {
 .map-container {
   display: table-cell;
   vertical-align: middle;
+  overflow: hidden;
 }
 
 #img-mapper {
   margin:0 auto;
+  transform: scale(1.2);
 }
 
 .img-mapper-img {
