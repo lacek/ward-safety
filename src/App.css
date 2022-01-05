@@ -63,8 +63,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
@@ -82,12 +82,12 @@ body {
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ddd;
 }
 
 .nes-btn.start {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .timer {
@@ -95,7 +95,7 @@ body {
   top: 1rem;
   right: 2rem;
   z-index: 2;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow:
     -1px -1px 0 #555,
      0   -1px 0 #555,
@@ -112,7 +112,7 @@ body {
   top: 1rem;
   left: 2rem;
   z-index: 2;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow:
     -1px -1px 0 #555,
      0   -1px 0 #555,
@@ -125,6 +125,7 @@ body {
 }
 
 .score .nes-icon {
-  height: 14px;
-  margin-right: 0;
+  margin-bottom: 6px;
+  margin-right: -12px;
+  transform: scale(1.5);
 }
