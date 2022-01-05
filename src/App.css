@@ -80,6 +80,7 @@ body {
 .overlay-content .nes-container {
   margin-left: 10vw;
   margin-right: 10vw;
+  opacity: .9;
 }
 
 .description {
