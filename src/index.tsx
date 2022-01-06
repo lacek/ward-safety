@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+  // disable zoom and scroll
+  document.addEventListener('touchmove', e => {
+    e.preventDefault();
+  }, {passive: false});
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
