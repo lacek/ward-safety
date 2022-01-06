@@ -21,7 +21,7 @@ function App() {
     setScore(0);
     setCompleteMessage('')
     setIsCompleted(false);
-    setDate(Date.now() + 30000);
+    countdownApi?.stop();
     countdownApi?.start();
   }
 
